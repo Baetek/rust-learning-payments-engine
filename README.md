@@ -21,7 +21,7 @@ This program simulates a bank. Given a transaction file it processes all the con
 
 # Expected input format
 
-Space separated list of CVS's of the following format: 
+Space separated list of CSV's of the following format: 
 
 ```
 type, client, tx, amount
@@ -40,7 +40,29 @@ where
 
 `tx` is a globally unique integer id of the transaction, 
 
-`amount` is a floating point amount of the transaction. This can be empty for transactions that aren't deposit or withdrawl - the empty value can be proceeded by a comma or not.
+`amount` is a floating point amount of the transaction. This can be empty for transactions that aren't deposit or withdrawl - the empty value can be proceeded by a comma or not. It supports up to 4 places after the decimal point. 
+
+# Expected Output format
+
+For the example input above the program should output csv format text on stdout
+
+```
+client,available,held,total,locked
+1,1.5,0,1.5,false
+2,2,0,2,false
+```
+
+where
+
+`client` is a globally unique id of a client, (integer)
+
+`available` is the available balance in the clients account, (floating point)
+
+`held` is the held / currently disputed balance in the clients account, (floating point)
+
+`total` is the total funds in the clients account, (floating point)
+
+`locked` is whether or not the account is locked due to a dispute ending with a chargeback (boolean)
 
 
 # Benchmarks
