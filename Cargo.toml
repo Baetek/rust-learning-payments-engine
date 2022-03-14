@@ -1,0 +1,19 @@
+[package]
+name = "rust-learnings-payments-engine"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "async_bank_runner"
+path = "src/bin/main.rs"
+
+[lib]
+name = "bank"
+path = "src/lib/lib.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+csv = "1.1"
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
