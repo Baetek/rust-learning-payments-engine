@@ -19,7 +19,7 @@ This program simulates a bank. Given a transaction file it processes all the con
 
 `cargo doc --open` - Generates documentation for the project and opens in a webbrowser
 
-`cargo clippy` / `cargo clippy --fix` - Outputs extra linting hints for the project
+`cargo clippy` - Outputs extra linting hints for the project
 
 # Expected input format
 
