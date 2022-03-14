@@ -17,8 +17,8 @@ It supports async execution from multiple csv's at the same time for a considera
 # Benchmarks
 
 ```
-1 1 million transaction CSV - 11 seconds
-10 100k transaction CSVs - 2 seconds
+Single 1 million transaction CSV - 11 seconds
+10 x 100k transaction CSV with async - 2 seconds
 ```
 
 # To-Do
