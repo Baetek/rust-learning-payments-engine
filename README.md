@@ -19,6 +19,30 @@ This program simulates a bank. Given a transaction file it processes all the con
 
 `cargo doc --open` - Generates documentation for the project and opens in a webbrowser
 
+# Expected input format
+
+Space separated list of CVS's of the following format: 
+
+```
+type, client, tx, amount
+deposit, 1, 1, 1.0
+deposit, 2, 2, 2.0
+deposit, 1, 3, 2.0
+withdrawal, 1, 4, 1.5
+withdrawal, 2, 5, 3.0
+```
+
+where 
+
+`type` is the type of transaction, supported types are `deposit`, `withdrawal`, `dispute`, `resolve` or `chargeback`
+
+`client` is a globally unique integer id of a client, 
+
+`tx` is a globally unique integer id of the transaction, 
+
+`amount` is a floating point amount of the transaction. This can be empty for transactions that aren't deposit or withdrawl - the empty value can be proceeded by a comma or not.
+
+
 # Benchmarks
 
 ```
