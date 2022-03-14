@@ -19,8 +19,6 @@ This program simulates a bank. Given a transaction file it processes all the con
 
 `cargo doc --open` - Generates documentation for the project and opens in a webbrowser
 
-`cargo clippy` - Outputs extra linting hints for the project
-
 # Expected input format
 
 Space separated list of one or more CSV file paths, with the files being of the following format: 
