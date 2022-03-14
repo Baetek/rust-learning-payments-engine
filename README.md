@@ -65,6 +65,22 @@ where
 `locked` is whether or not the account is locked due to a dispute ending with a chargeback (boolean)
 
 
+# Project File Structure
+
+.
+├── Cargo.lock
+├── Cargo.toml
+├── README.md
+├── src
+│   ├── bin
+│   │   └── main.rs             # The main file executed using `cargo run` (Reads csv paths from stdin and spins off tokio tasks of Bank::process_transactions_from_csv_path)
+│   └── lib
+│       ├── bank.rs             # Contains the Bank and Account structs and related functions
+│       ├── lib.rs
+│       ├── shared_types.rs     # Contains types used across the project to minimize duplication such as the type of ClientID of a transaction / bank 
+│       └── transaction.rs      # Contains the Tx (Transction) struct and related functions + serde methods to serialize and deserialize th CSV
+
+
 # Benchmarks
 
 ```
