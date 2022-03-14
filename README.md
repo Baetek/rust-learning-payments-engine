@@ -6,9 +6,12 @@ It supports async execution from multiple csv's at the same time for a considera
 
 # Getting Started
 
-`cargo run -- transactions.csv' - Processes transactions in transactions.csv and outputs a final state of the bank's client accounts onto stdout
-`cargo run -- transactions-provided-100k.csv transactions-provided-100k.csv transactions-provided-100k.csv' - Same as above but using tokio async to process multiple files at the same time
+`cargo run -- transactions.csv` - Processes transactions in transactions.csv and outputs a final state of the bank's client accounts onto stdout
+
+`cargo run -- transactions-provided-100k.csv transactions-provided-100k.csv transactions-provided-100k.csv` - Same as above but using tokio async to process multiple files at the same time
+
 `cargo test` - Runs unit tests
+
 `cargo doc --open` - Generates documentation for the project and opens in a webbrowser
 
 # Benchmarks
