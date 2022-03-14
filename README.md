@@ -8,6 +8,10 @@ Processes records from csv record by record , however it uses the csv crate's bu
 
 # Getting Started
 
+## Dependencies 
+
+- You will need Rust installed with the toolchain
+
 `cargo run -- transactions.csv` - Processes transactions in transactions.csv and outputs a final state of the bank's client accounts onto stdout
 
 `cargo run -- transactions-provided-100k.csv transactions-provided-100k.csv transactions-provided-100k.csv` - Same as above but using tokio async to process multiple files at the same time
