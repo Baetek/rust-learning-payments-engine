@@ -21,7 +21,7 @@ This program simulates a bank. Given a transaction file it processes all the con
 
 # Expected input format
 
-Space separated list of CSV's of the following format: 
+Space separated list of one or more CSV file paths, with the files being of the following format: 
 
 ```
 type, client, tx, amount
