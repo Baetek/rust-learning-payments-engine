@@ -3,7 +3,7 @@
 This program simulates a bank. Given a transaction file it processes all the contained transactions to generate a state of the bank and all it's clients accounts.
 It supports async execution from multiple csv's at the same time for a considerable speed up, it is able to share state between the threads so different input data streams can reference the same customer accounts and transactions.
 
-The program opens records from csv record by record , however it uses the csv crate's built in buffer reader to speed up IO
+Processes records from csv record by record , however it uses the csv crate's built in buffer reader to speed up IO
 
 
 # Getting Started
