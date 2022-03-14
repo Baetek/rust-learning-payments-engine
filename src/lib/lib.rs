@@ -1,11 +1,11 @@
 //!
-//! This library is designed to be used with the [crate::main::main] runner,
+//! This library is designed to be used with the [crate::async_bank_runner] runner,
 //! however you can use it standalone.
 //!
 //! # Examples
 //!
 //! ```
-//! use bank::bank::Bank;
+//! use bank_lib::bank::Bank;
 //!
 //! let bank = Bank::new();
 //! Bank::process_transactions_from_csv_path("transactions.csv", bank);

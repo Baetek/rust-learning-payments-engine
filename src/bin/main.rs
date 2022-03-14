@@ -2,7 +2,7 @@ use std::env;
 use std::env::Args;
 use std::error::Error;
 
-use bank::bank::Bank;
+use bank_lib::bank::Bank;
 
 /// Takes in a space separated list of csv file paths from stdin
 /// Simultaneously processes all contained transactions to a central bank
