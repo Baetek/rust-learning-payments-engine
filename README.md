@@ -31,7 +31,7 @@ Single 1 million transaction CSV - 11 seconds
  
 - Switch to zero copy serialization / deserialization if possible for this data set.
 - CI/CD integration to run test on commits 
-- More unit tests to cover more cases
+- More unit tests to cover more cases and integration tests of the main library entry points. 
 - More documentation and fix to work better with cargo doc 
 - Refactor to move getting client account of transaction::Tx:process to Bank::get_account
 - Sanity checks on data - e.g held amount should probably never be negative
