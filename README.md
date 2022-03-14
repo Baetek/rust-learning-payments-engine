@@ -1,9 +1,10 @@
 # rust-learning-payments-engine
 
 This program simulates a bank. Given a transaction file it processes all the contained transactions to generate a state of the bank and all it's clients accounts.
-It supports async execution from multiple csv's at the same time for a considerable speed up, it is able to share state between the threads so different input data streams can reference the same customer accounts and transactions.
 
-Processes records from csv record by record , however it uses the csv crate's built in buffer reader to speed up IO
+- Supports async execution from multiple csv's at the same time for a considerable speed up, it is able to share state between the threads so different input data streams can reference the same customer accounts and transactions.
+- Processes records from csv record by record , however it uses the csv crate's built in buffer reader to speed up IO
+- Stores currency amounts internally as integers to avoid compunding floating point errors during long runs with millions of transactions.
 
 
 # Getting Started
